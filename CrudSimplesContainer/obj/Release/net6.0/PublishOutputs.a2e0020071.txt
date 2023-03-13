@@ -1,0 +1,13 @@
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\CrudSimplesContainer.exe
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\appsettings.Development.json
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\appsettings.json
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\CrudSimplesContainer.dll
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\CrudSimplesContainer.deps.json
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\CrudSimplesContainer.runtimeconfig.json
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\CrudSimplesContainer.pdb
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\Dapper.dll
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\Microsoft.OpenApi.dll
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\Npgsql.dll
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Usuário\Documentos\.NET\CrudSimplesContainer\CrudSimplesContainer\out\Swashbuckle.AspNetCore.SwaggerUI.dll
