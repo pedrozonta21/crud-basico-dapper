@@ -1,5 +1,5 @@
 
-CREATE TABLE "produtos"
+CREATE TABLE produtos
 (
     id serial,
     nome varchar(50),
