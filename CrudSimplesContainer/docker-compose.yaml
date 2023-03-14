@@ -1,5 +1,5 @@
 services:
-  db:
+  db-postgres:
     image: postgres:latest
     restart: always
     environment:
@@ -14,6 +14,7 @@ services:
     image: mysql:latest
     restart: always
     environment:
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: crud_basico
       MYSQL_USER: pedro
       MYSQL_PASSWORD: pedro
@@ -21,6 +22,12 @@ services:
       - mysql-doc:/var/lib/mysql
       - ./Database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
+  # adminer:
+  #  image: adminer
+  #  restart: always
+  #  ports:
+  #    - 8080:8080
+     
   app:
     image: api
     build: 
@@ -28,7 +35,7 @@ services:
     ports: 
       - 5000:80
     depends_on:
-      - db
+      - db-postgres
       - db-mysql
 
 volumes:
