@@ -10,14 +10,27 @@ services:
       - postgres-doc:/var/lib/postgresql/data
       - ./Database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
+  db-mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: crud_basico
+      MYSQL_USER: pedro
+      MYSQL_PASSWORD: pedro
+    volumes:
+      - mysql-doc:/var/lib/mysql
+      - ./Database/init.sql:/docker-entrypoint-initdb.d/init.sql
+
   app:
-    image: pedrozonta21/api-crud-simples
+    image: api
     build: 
       context: .
     ports: 
-     - 5000:80
+      - 5000:80
     depends_on:
       - db
+      - db-mysql
 
 volumes:
   postgres-doc:
+  mysql-doc:
