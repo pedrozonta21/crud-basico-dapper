@@ -11,5 +11,5 @@ public class ConexaoMySql : IFabricaDeConexao
     public ConexaoMySql(IConfiguration configuration) => _configuration = configuration;
 
     public IDbConnection RetornarNovaConexao() 
-        => new MySqlConnection(_configuration.GetConnectionString("Mysql"));
+        => new MySqlConnection(_configuration.GetConnectionString("MySql"));
 }
