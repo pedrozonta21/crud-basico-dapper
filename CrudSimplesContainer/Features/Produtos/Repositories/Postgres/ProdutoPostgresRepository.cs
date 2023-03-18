@@ -3,13 +3,13 @@ using CrudSimplesContainer.Features.Produtos.Models;
 using CrudSimplesContainer.Features.Produtos.Repositories.Interfaces;
 using Dapper;
 
-namespace CrudSimplesContainer.Features.Produtos.Services;
+namespace CrudSimplesContainer.Features.Produtos.Repositories.Postgres;
 
-public class ProdutoRepository : IProdutoRepository
+public class ProdutoPostgresRepository : IProdutoRepository
 {
     private readonly IFabricaDeConexao _fabricaDeConexao;
 
-    public ProdutoRepository(IFabricaDeConexao fabricaDeConexao) => _fabricaDeConexao = fabricaDeConexao;
+    public ProdutoPostgresRepository(IFabricaDeConexao fabricaDeConexao) => _fabricaDeConexao = fabricaDeConexao;
 
     public async Task<IEnumerable<ProdutoModel>> ListarProdutos()
     {

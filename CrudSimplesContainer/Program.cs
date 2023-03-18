@@ -2,13 +2,13 @@ using CrudSimplesContainer.Connection;
 using CrudSimplesContainer.Connection.Interfaces;
 using CrudSimplesContainer.Features.Produtos.EndPoints;
 using CrudSimplesContainer.Features.Produtos.Repositories.Interfaces;
-using CrudSimplesContainer.Features.Produtos.Services;
+using CrudSimplesContainer.Features.Produtos.Repositories.MySql;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddScoped<IFabricaDeConexao, ConexaoPostgres>();
-builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddScoped<IFabricaDeConexao, ConexaoMySql>();
+builder.Services.AddScoped<IProdutoRepository, ProdutoMySqlRepository>();
 builder.Services.AddScoped<ProdutoEndPoints>();
 
 var app = builder.Build();
